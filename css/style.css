@@ -29,7 +29,7 @@ h2{
 h2.bio{color:#3f7f7c;}
 p.bio{color: #fff;}
 
-a > h2{
+.anone{
 	text-decoration: none;
 }
 
