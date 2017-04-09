@@ -30,12 +30,10 @@ h2.bio{color:#3f7f7c;}
 p.bio{color: #fff;}
 
 .anone{
+	color: #000;
 	text-decoration: none;
 }
 
-a h2{
-	color: #000;
-}
 
 /* Header & Navigation
 –––––––––––––––––––––––––––––––––––––––––––––– */
