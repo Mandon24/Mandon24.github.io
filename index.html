@@ -1,10 +1,143 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first Github Project</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with Github pages.</p>
-  </body>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Michael Andon | Portfolio</title>
+  <meta name="description" content="Portfolio for Web Dev">
+  <meta name="author" content="Michael Andon">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Satisfy" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <header class="main_nav green">
+    <div class="container">
+      <div class="twelve columns">
+        <div class="logo"><a href="#">Mandon</a></div>
+
+      </div>
+    </div>
+  </header>
+  <h2>CRUD Application</h2>
+  <div class="container main">
+    <div class="row">
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/ToDoList_Main.png"><img src="images/ToDoList_Main.png" /></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/ToDoList_View.png"><img src="images/ToDoList_View.png" /></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/ToDoList_Edit.png"><img src="images/ToDoList_Edit.png" /></a>
+      </div>
+    </div>
+<h2>SoundStash: A Music Web Application</h2>
+    <div class="row">
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/ToDoList_Edit.png"><img src="images/ChartsArtists.png" /></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/ToDoList_Edit.png"><img src="images/Week9_HomePage.png" /></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/ToDoList_Edit.png"><img src="images/Week9_MobileMenu.png" /></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="four columns portfolio">
+      </div>
+      <div class="four columns portfolio">
+      </div>
+      <div class="four columns portfolio">
+      </div>
+    </div>
+
+  </div> <!-- container -->
+
+  <div class="row green">
+    <div class="container">
+      <div class="four columns">
+        <img class="avatar" src="images/mandon.jpg">
+      </div>
+      <div class="eight columns">
+        <h2 class="bio">About Michael Andon</h2>
+        <p class="bio">I am a recent graduate from the University of California, Irvine with a bachelor's degree in Computer Engineering. I have 4 years programming experience in multiple languages that include but not limited to Java, C and C++. Furthermore, I have 1 year experience in web programming using HTML/CSS and Javascript. During my 4 years at UCI, I managed to obtain real world experience with embedded systems and web applications. I have experience establishing two-way radio communication (in the C language) between multiple Seeeduinos to a RC Sailcraft. I have had hands-on experience with web programming, being able to develop a music web application using Javascript, HTML/CSS, and my knowledge on front-end web technologies.</p>
+      </div>
+    </div>
+  </div> <!-- Row Green -->
+
+  <footer>
+    <div class="container">
+      <div class="row twelve columns">
+        <ul class="social">
+  			  <!-- <li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+  			  <li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+  			  <li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+  			  <li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
+  			  <li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li> -->
+  			  <li class="linkedin"><a href="https://www.linkedin.com/in/michael-andon-27165998" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+  			</ul>
+      </div>
+      <div class="row twelve columns">
+        <p>&copy; 2015 Michael Andon. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Magnific Popup core JS file -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+    $('.image-link').magnificPopup({
+     type: 'image',
+     mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+     zoom: {
+       enabled: true, // By default it's false, so don't forget to enable it
+
+       duration: 300, // duration of the effect, in milliseconds
+       easing: 'ease-in-out', // CSS transition easing function
+
+       // The "opener" function should return the element from which popup will be zoomed in
+       // and to which popup will be scaled down
+       // By defailt it looks for an image tag:
+       opener: function(openerElement) {
+         // openerElement is the element on which popup was initialized, in this case its <a> tag
+         // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+         return openerElement.is('img') ? openerElement : openerElement.find('img');
+       }
+     }
+
+    });
+  </script>
+</body>
 </html>
