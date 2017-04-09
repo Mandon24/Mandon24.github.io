@@ -29,12 +29,11 @@ h2{
 h2.bio{color:#3f7f7c;}
 p.bio{color: #fff;}
 
-.anone{
+h2 a{
 	color: #000;
 	text-decoration: none;
 }
-
-.anone:hover{
+h2 a:hover{
 	color: #6F6F6F;
 }
 
