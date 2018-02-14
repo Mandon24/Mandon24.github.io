@@ -2,6 +2,10 @@ body, html {
   height: 100%;
   margin: 0;
 }
+.rob{
+  font-family: 'Roboto Slab', serif;
+  margin-left: 50px;
+}
 
 #about{
   font-family:'Cabin Sketch';
@@ -16,16 +20,18 @@ p{
 }
 
 .hFont{
-  font-family: 'Cabin Sketch';
+  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Cabin Sketch';*/
 
 }
 
 .hFont a{
-  color: black;
+  color: inherit;
+
 }
 
-.hFont:hover{
-  color: inherit;
+.hFont a:hover{
+  color: #666666;
 }
 
 /* Sections */
@@ -57,7 +63,7 @@ p{
 
 .logo a{
 
-  font-family: 'Cabin Sketch';
+  font-family: 'Roboto Slab', serif;
   font-size: 8em;
   color: black;
 
@@ -96,7 +102,7 @@ p{
 
 .logo a:hover{
 
-  border: 3px solid #666666;
+  /* border: 3px solid #666666; */
 	color: #666666;
   text-decoration: none;
 }
@@ -115,6 +121,13 @@ p{
   background-color: #7accc8 /*rgb(0, 123,182)*/;
 
 
+}
+
+#slide4{
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  margin: 20px;
 }
 
 #self{
@@ -140,7 +153,11 @@ img.avatar{
 	border-radius: 400px;
 	border: 5px solid #fff;
 }
-img:hover{opacity:0.8;}
+
+img.socialMedia{
+  margin: 12px;
+}
+img.socialMedia:hover{opacity:0.8;}
 
 .parent{
   overflow: hidden;
