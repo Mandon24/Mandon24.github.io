@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Andon | Portfolio</title>
+
+    <!-- Website Logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/menu/logo.png" />
+
     <!-- CSS -->
     <link href="./css/output.css" rel="stylesheet" />
 
@@ -14,10 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- JS -->
+    <script src="js/projects_tab.js" defer></script>
   </head>
   <body class="bg-black text-white">
     <!-- Navigation Bar -->
-    <nav class="bg-[#080808] fixed w-full z-20 top-0 start-0 px-8">
+    <nav class="bg-black fixed w-full z-20 top-0 start-0 px-8">
       <div
         class="flex flex-wrap justify-center items-center font-plex-mono place-content-center mx-auto bg-[#1B1B1B] w-3/4 py-6 rounded-b-xl"
       >
@@ -41,7 +48,13 @@
           class="mx-4"
           ><img
             src="img/social_media/LinkedInLogo.png"
-            alt="mysql logo"
+            alt="linkedin logo"
+            class="opacity-70 w-6 h-6 transform transition-transform hover:opacity-100"
+        /></a>
+        <a href="https://github.com/Mandon24" target="_blank" class="mx-4"
+          ><img
+            src="img/social_media/github.png"
+            alt="gh logo"
             class="opacity-70 w-6 h-6 transform transition-transform hover:opacity-100"
         /></a>
       </div>
@@ -194,7 +207,33 @@
       >
         Projects
       </h1>
-      <div class="flex flex-row flex-wrap gap-4 font-plex-mono justify-center">
+      <div class="flex flex-row justify-center space-x-4 mb-4">
+        <button
+          id="frontend-btn"
+          class="tab-button font-plex-mono py-2 px-4 bg-[#1B1B1B] text-white transform transition-transform hover:bg-gray-700 active-tab"
+          onclick="openTab('frontend-tab', 'frontend-btn')"
+        >
+          Frontend
+        </button>
+        <button
+          id="backend-btn"
+          class="tab-button font-plex-mono py-2 px-4 bg-[#1B1B1B] text-white transform transition-transform hover:bg-gray-700"
+          onclick="openTab('backend-tab', 'backend-btn')"
+        >
+          Backend
+        </button>
+        <button
+          id="qa-btn"
+          class="tab-button font-plex-mono py-2 px-4 bg-[#1B1B1B] text-white transform transition-transform hover:bg-gray-700"
+          onclick="openTab('qa-tab', 'qa-btn')"
+        >
+          Software Quality/Test Automation
+        </button>
+      </div>
+      <div
+        id="frontend-tab"
+        class="project-tab-content flex flex-row flex-wrap gap-4 font-plex-mono justify-center"
+      >
         <!-- Card 1 -->
         <a href="https://mandon24.github.io/jMarker" target="_blank">
           <div
@@ -303,6 +342,67 @@
                 Frontend project utilizing javascript, html and css to create a
                 pixelized art maker, allowing the user to draw by coloring in
                 pixels in a grid using the color of their choice.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Backend tab content -->
+      <div
+        id="backend-tab"
+        class="project-tab-content flex-row flex-wrap gap-4 font-plex-mono justify-center hidden"
+      >
+        <!-- Card 1 -->
+        <a
+          href="https://github.com/Mandon24/college-application-api"
+          target="_blank"
+        >
+          <div
+            class="aspect-[3/5] w-64 bg-white rounded-lg shadow-lg hide-scrollbar overflow-scroll transform transition-transform duration-500 ease-in-out hover:-translate-y-2"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="img/projects/jMarker_Homepage.png"
+              alt="college app api"
+            />
+            <div class="p-6">
+              <h3 class="text-gray-600 font-semibold text-xl mb-2 text-center">
+                College App API
+              </h3>
+              <p class="text-gray-600">
+                Backend project utilizing Java and SpringBoot to create an api
+                that takes in a set of student data and provides a decision on
+                whether to approve, reject or place the student's application in
+                review.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Software Quality tab content -->
+      <div
+        id="qa-tab"
+        class="project-tab-content flex-row flex-wrap gap-4 font-plex-mono justify-center hidden"
+      >
+        <!-- Card 1 -->
+        <a href="https://github.com/Mandon24/finfare-exercises" target="_blank">
+          <div
+            class="aspect-[3/5] w-64 bg-white rounded-lg shadow-lg hide-scrollbar overflow-scroll transform transition-transform duration-500 ease-in-out hover:-translate-y-2"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="img/projects/google_finance_page.png"
+              alt="gfp"
+            />
+            <div class="p-6">
+              <h3 class="text-gray-600 font-semibold text-xl mb-2 text-center">
+                Google Finance Page Scraper
+              </h3>
+              <p class="text-gray-600">
+                Selenium based exercise that scrapes the google finance page and
+                compares present stock symbols with a set of given stock
+                symbols. Incorporates gh actions to automatically run tests at
+                midnight UTC.
               </p>
             </div>
           </div>
